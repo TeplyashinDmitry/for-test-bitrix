@@ -4,9 +4,9 @@
        //создаем класс
   class Good  
   {
-    public static $goods; 
+    public static $goods; // создаем кэш
 
-    static function getAllGoods()
+    static function getAllGoods() //создаем метод 
     {
         
 
@@ -26,7 +26,7 @@
       return static::$goods;   
     } 
 
-    static function getUpdates()
+    static function getUpdates() //перезапись данных
     {
       static::$goods = null;
       static::getAllGoods();
